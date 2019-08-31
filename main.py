@@ -95,7 +95,7 @@ class Game:
 			self.player.tail[i].angle = new_angle
 			self.player.tail[i].speed = self.player.speed
 
-		# Stop game if player touches edges
+	
 		if self.collision_edges(self.player.head.x, self.player.head.y, self.player.head.size):
 			global running
 			running = False
@@ -253,9 +253,7 @@ def menu():
 
 def main():
 	global running
-
 	game = Game()
-
 	game.start()
 	
 	while running:
